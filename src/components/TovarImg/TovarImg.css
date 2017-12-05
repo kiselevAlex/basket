@@ -1,0 +1,75 @@
+.tb-img{
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.td-img-href{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.td-img-href img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.tb-img-atr{
+    position: absolute;
+    top: 5px!important;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 50%;
+}
+
+.tb-img-atr.hit{
+    background-color: #e5097f;
+}
+
+.tb-img-atr.hit:after {
+    content: 'ХИТ';
+    color: #fff;
+    margin-top: 9px;
+    display: block;
+}
+
+.tb-img-atr.new{
+    background-color: #008dd2;
+}
+
+.tb-img-atr.new:after{
+    display: block;
+    margin-top: 9px;
+    content: 'NEW';
+    color: #fff;
+}
+
+.tb-img-basket{
+    background-image: url(/img/basket.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 37px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    display: none;
+}
+
+.tb-img-basket-count{
+    margin-top: 18px;
+    margin-left: 18px;
+    width: 19px;
+    text-align: center;
+    color: #693;
+    font-size: 12px;
+    display: block;
+    font-weight: 700;
+}

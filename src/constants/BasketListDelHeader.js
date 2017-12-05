@@ -1,0 +1,1 @@
+export const SET_CODE_HEADER_DEL = 'SET_CODE_HEADER_DEL'
