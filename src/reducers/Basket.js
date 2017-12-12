@@ -127,8 +127,8 @@ const initialState = {
     fetching: false,
     selectall: false,
     selectdelall: false,
-    sum: '1',
-    nds: 12,
+    sum: '0',
+    nds: 0,
     URL_MAKE: '/adasd'
 };
 

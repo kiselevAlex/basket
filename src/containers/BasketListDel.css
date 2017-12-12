@@ -197,18 +197,34 @@ input.bat-selectcheckbox[type="checkbox"]:checked + label:after {
     position: relative;
 }
 
-.deleteLink {
+.deleteLink,
+.xlsLink{
     padding-left: 18px;
 }
 
-.deleteLink > i{
+.deleteLink > i,
+.xlsLink > i{
     padding-right: 2px;
+    margin-right: 3px;
 }
 
 .deleteLink:hover{
     color: crimson !important;
 }
 
+.xlsLink:hover,
+.xlsLink.active{
+    color: #006400 !important;
+}
+
 .deleteLink:hover:before{
+   background-color: crimson;
+}
+
+.deleteLink.active{
+    color: crimson !important;
+}
+
+.deleteLink.active:before{
    background-color: crimson;
 }

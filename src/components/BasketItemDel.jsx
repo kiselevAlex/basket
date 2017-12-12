@@ -199,7 +199,7 @@ class BasketItemDel extends Component {
                             <a href="javascript:void(0)" className="delayTList" data-id={data.PRODUCT_ID} onClick={(e)=>{
                                 this.modifyQuentity('delay');
                                 return false;
-                            }}><i className="fa fa-trash-o" aria-hidden="true"></i> Отложить</a>
+                            }}><i className="fa fa-clock-o" aria-hidden="true"></i> Отложить</a>
                         </div>
                     </div>
                     <div className="bib-property">

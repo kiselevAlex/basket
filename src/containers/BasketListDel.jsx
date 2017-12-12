@@ -49,6 +49,7 @@ class BasketListDel extends Component {
                 }
             });
             
+            
             const { toogleCheckItemDel } = this.props.actionListDel;  
             
             let items = prepare.map((item, index) =>
@@ -138,6 +139,10 @@ class BasketListDel extends Component {
         
         let items = this.renderItem();
         
+        let activeTop = this.props.items.filter((it)=>{
+            return it.CHECKED;
+        }).length != 0 ? 'active': '';
+        
         items = this.props.fetching ? <Preloader/> : items
         
         return (
@@ -151,7 +156,10 @@ class BasketListDel extends Component {
                         <label htmlFor="bat-selectcheckbox" className="bat-selectlabel">Выделить всё</label>
                     </span>
                     <span className="bdl-selected-block">С выбранными:
-                        <span className="deleteLinkBlock"><a href="javascript:void(0)" className="deleteLink" onClick={this.deleteSelectedItem}><i className="fa fa-trash-o" aria-hidden="true"></i>Удалить из корзины</a></span>
+                        <span className="deleteLinkBlock"><a href="javascript:void(0)" className={"deleteLink " + activeTop} onClick={this.deleteSelectedItem}><i className="fa fa-trash-o" aria-hidden="true"></i>Удалить из корзины</a></span>
+                        <span className="deleteLinkBlock">
+                            <a href="/xlsBasket/" className={"xlsLink " + activeTop}><i class="fa fa-file-text" aria-hidden="true"></i>Выгрузить в Excel</a>
+                        </span>
                     </span>
                 </Col>
                 <Col lg={4} className="basketSort p-l-n p-r-n">
